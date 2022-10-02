@@ -1,1 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var fs = require("fs");
 console.log("Ejercicio 3 CP");
+var fileName1 = 'ejemplo1.txt';
+var fileContent1 = fs.readFileSync(fileName1, 'utf8');
+var fileName2 = 'ejemplo2.txt';
+var fileContent2 = fs.readFileSync(fileName2, 'utf8');
+console.log(fileContent1);
+console.log(fileContent1);
+var archivoConjunto = fs.writeFileSync("NuevoDoc.txt", fileContent1 + fileContent2);
+console.log(archivoConjunto);
