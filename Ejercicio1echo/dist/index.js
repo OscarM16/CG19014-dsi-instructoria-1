@@ -1,1 +1,2 @@
-console.log("Hola mundo");
+var parametro = "Hello World";
+console.log(parametro);
