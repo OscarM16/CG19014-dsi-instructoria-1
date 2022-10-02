@@ -1,7 +1,4 @@
 import * as fs from 'fs';
-// let fileName: string = "ejemplo.txt"
-// let fileContent = fs.readFileSync(fileName, 'utf8');
-// console.log(fileContent);
 
 class Archivo {
     nombre:string;
@@ -10,8 +7,8 @@ class Archivo {
     }
 
     LeerElArchivo() {
-        let fileContent = fs.readFileSync(this.nombre, 'utf8');
-        console.log(fileContent);
+        let ContenidoArchivo = fs.readFileSync(this.nombre, 'utf8');
+        console.log(ContenidoArchivo);
     }
 }
 
