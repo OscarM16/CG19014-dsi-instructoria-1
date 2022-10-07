@@ -1,2 +1,2 @@
-let parametro: String = "Hello World"
-console.log(parametro)
+const Arraydelcliente = process.argv.slice(2);
+console.info(Arraydelcliente.join(" "));

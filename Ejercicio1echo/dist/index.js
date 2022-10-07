@@ -1,2 +1,2 @@
-var parametro = "Hello World";
-console.log(parametro);
+var Arraydelcliente = process.argv.slice(2);
+console.info(Arraydelcliente.join(" "));
