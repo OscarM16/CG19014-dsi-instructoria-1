@@ -6,10 +6,11 @@ var Archivo = /** @class */ (function () {
         this.nombre = NombredelArchivo;
     }
     Archivo.prototype.LeerElArchivo = function () {
-        var ContenidoArchivo = fs.readFileSync(this.nombre, 'utf8');
+        var ContenidoArchivo = fs.readFileSync(this.nombre[0], 'utf8');
         console.log(ContenidoArchivo);
     };
     return Archivo;
 }());
-var imprimir = new Archivo("ejemplo.txt");
+var Arraydelcliente = process.argv.slice(2);
+var imprimir = new Archivo(Arraydelcliente);
 imprimir.LeerElArchivo();
